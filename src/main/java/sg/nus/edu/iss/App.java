@@ -83,7 +83,7 @@ public class App {
         Integer i = 0;
         input = con.readLine("Type a phrase ");
 
-        while (i<input.length()){
+        while (i<=input.length()){
             System.out.println(input.substring(0,i));
             i++;
 
@@ -107,6 +107,12 @@ public class App {
             System.out.println("Task " + (k+1) + " --> " + todo[k]);
         }
 
+        // Slide 24 command line arguments
+        String strName = "NUS";
+        if (args.length>0){
+            strName = args[0];
+        }   
+        System.out.println("Hello "+ strName);
 
 
     }
