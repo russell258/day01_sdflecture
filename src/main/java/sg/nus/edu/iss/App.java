@@ -78,6 +78,36 @@ public class App {
         }
 
 
+        // slide 21
+
+        Integer i = 0;
+        input = con.readLine("Type a phrase ");
+
+        while (i<input.length()){
+            System.out.println(input.substring(0,i));
+            i++;
+
+        }    
+
+        for (int idx = 0; idx <=input.length(); idx++){
+            System.out.println(input.substring(0,idx));
+        }
+
+
+        // slide 23 array declaration to-do list
+
+        String[] todo = new String[5];
+
+        for (int j=0; j<todo.length; j++){
+            String task = con.readLine("Enter task %d: ", j+1);
+            todo[j] = task;
+        }
+
+        for (int k =0; k < todo.length; k++){
+            System.out.println("Task " + (k+1) + " --> " + todo[k]);
+        }
+
+
 
     }
 }
