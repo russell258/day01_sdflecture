@@ -45,5 +45,24 @@ public class App
         }
 
 
+        // Slide 18 Switch Statement
+
+        switch(input){
+            case "swim":
+                System.out.println("The nearest swimming pool is Clementi");
+                break;
+            case "jog":
+                System.out.println("The nearest park is West Coast Park");
+                break;
+            case "cycle":
+                System.out.println("You could cycle along the PCN");
+                break;
+            default:
+                System.out.println("Seems like you're a boring person without a hobby");
+                break;
+        }
+
+
+
     }
 }
